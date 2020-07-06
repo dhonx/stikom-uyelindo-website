@@ -144,6 +144,12 @@ h2 {
   background-position: center;
 }
 
+/* --------------------------------- FOOTER --------------------------------- */
+.footer {
+  background-color: #531a35;
+  height: 400px;
+}
+
 /* --------------------------------- HELPERS -------------------------------- */
 .bold {
   font-weight: bold;
@@ -155,7 +161,7 @@ h2 {
 
 .fake {
   height: 200vh;
-  background-color: #882551;
+  background-color: #641f3e;
 }
 
 /* ---- SHADOWS ---- */
