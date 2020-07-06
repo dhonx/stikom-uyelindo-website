@@ -25,16 +25,41 @@
 
     <!-- -------------------------------- BRAND -------------------------------- -->
     <div class="brand-header">
-      <a href="/" class="brand-wrapper container">
-        <img src="./img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
-        <div>
-          <h1 class="bold text-center">STIKOM UYELINDO</h1>
-          <h2 class="text-center">
-            The Real Education, The Real Inspiration Campus.
-          </h2>
-        </div>
-        <!-- <h1 class="bold">UYELINDO</h1> -->
-      </a>
+      <div class="top-part">
+        <button class="menu-toggle">
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20" rx="8"></rect>
+            <rect y="35" width="100" height="20" rx="8"></rect>
+            <rect y="70" width="100" height="20" rx="8"></rect>
+          </svg>
+        </button>
+        <a href="/" class="brand-wrapper container">
+          <img src="./img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
+          <div>
+            <h1 class="bold text-center name">STIKOM UYELINDO</h1>
+            <h2 class="text-center tagline">
+              The Real Education, The Real Inspiration Campus.
+            </h2>
+          </div>
+        </a>
+      </div>
+      <ul class="main-menu container">
+        <li class="home-menu">
+          <a href="/">
+            <img
+              style="width: 36px;"
+              src="./img/stikom-uyelindo-logo.png"
+              alt="Logo STIKOM Uyelindo"
+            />
+          </a>
+        </li>
+        <li><a href="#">Akademik</a></li>
+        <li><a href="#">Penerimaan</a></li>
+        <li><a href="#">Berita & Acara</a></li>
+        <li><a href="#">Pengumuman</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Daftar</a></li>
+      </ul>
     </div>
 
     <!-- ------------------------------ MAIN MENU ------------------------------ -->
@@ -65,18 +90,23 @@
 
     <script>
       (function () {
+        var brandHeader = document.querySelector(".brand-header");
+
         var mainMenuWrapper = document.querySelector(".main-menu-wrapper"),
           homeMenu = mainMenuWrapper.querySelector(".home-menu");
 
         window.addEventListener("scroll", function () {
           var topPos = mainMenuWrapper.getBoundingClientRect().top;
           if (topPos == 0) {
-            homeMenu.style.display = "flex";
-            mainMenuWrapper.style.backgroundColor = "#30252a59";
+            mainMenuWrapper.classList.add("sticked");
           } else {
-            homeMenu.style.display = "none";
-            mainMenuWrapper.style.backgroundColor = "#882551";
+            mainMenuWrapper.classList.remove("sticked");
           }
+        });
+
+        brandHeader.querySelector(".menu-toggle").addEventListener("click", function() {
+          var mainMenu = brandHeader.querySelector(".main-menu");
+          mainMenu.classList.toggle("toggled");
         });
       })();
     </script>

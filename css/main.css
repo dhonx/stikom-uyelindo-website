@@ -1,9 +1,14 @@
 /* * {
   transition: all 0.5s ease;
 } */
-body {
+
+html, body {
+  width: 100%;
+  height: 100%;
+  position: relative;
   font-family: "Bitter", serif;
 }
+
 h1 {
   font-size: 4rem;
 }
@@ -36,12 +41,49 @@ h2 {
 
 .brand-header {
   background-color: #882551;
-  padding: 50px 0 50px 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
 }
 
 .brand-header h1,
 .brand-header h2 {
   color: #e8d216;
+}
+
+.brand-header .tagline {
+  display: none;
+}
+
+.brand-header .name {
+  font-size: 2rem;
+}
+
+.brand-header .top-part {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.brand-header .top-part .menu-toggle {
+  background: none;
+  color: white;
+  border: none;
+  width: 5%;
+}
+
+.brand-header .top-part .menu-toggle svg {
+  fill: #fff;
+  width: 100%;
+}
+
+.brand-header .main-menu {
+  display: none;
+}
+
+.brand-header .main-menu.toggled {
+  display: flex;
 }
 
 .brand-wrapper {
@@ -60,14 +102,17 @@ h2 {
 /* -------------------------------- MAIN MENU ------------------------------- */
 .main-menu-wrapper {
   background-color: #882551;
-  position: sticky;
-  top: 0;
+  display: none;
+}
+
+.home-menu {
+  display: none;
 }
 
 .main-menu {
+  padding: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .main-menu a {
@@ -78,8 +123,6 @@ h2 {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
-  flex-wrap: wrap;
-  flex: 1 0 auto;
 }
 
 .main-menu a:hover {
@@ -113,4 +156,87 @@ h2 {
 .fake {
   height: 200vh;
   background-color: #882551;
+}
+
+/* ---- SHADOWS ---- */
+.brand-header {
+  box-shadow: rgba(0,0,0,.3) 0 0 20px;
+}
+
+@media (min-width: 1024px) {
+  /* --------------------------------- TOP NAV -------------------------------- */
+  .brand-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: static;
+  }
+
+  .brand-header {
+    padding: 50px 0 50px 0;
+    position: static;
+  }
+
+  .brand-header .tagline {
+    display: inline;
+  }
+
+  .brand-header .name {
+    font-size: 3.5rem;
+  }
+
+  .brand-header .top-part .menu-toggle,
+  .brand-header .main-menu,
+  .brand-header .main-menu.toggled {
+    display: none;
+  }
+
+  .brand-wrapper img {
+    width: 70px;
+    margin: 10px;
+    height: 70px;
+  }
+
+  /* -------------------------------- MAIN MENU ------------------------------- */
+  .main-menu-wrapper {
+    display: block;
+    background-color: #882551;
+    position: sticky;
+    top: 0;
+  }
+
+  .main-menu-wrapper.sticked {
+    background-color: #30252ac9;
+  }
+
+  .main-menu-wrapper.sticked .home-menu {
+    display: flex;
+  }
+
+  .main-menu {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .main-menu a {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    padding: 5px;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+  }
+
+  .main-menu a:hover {
+    border-bottom: 5px solid #e8d216;
+    color: #e8d216;
+    transition: all 0.5s ease;
+  }
 }
