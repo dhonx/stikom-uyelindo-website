@@ -73,7 +73,7 @@ h2 {
 .main-menu a {
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
-  padding: 5px;
+  padding: 10px 5px;
   display: flex;
   font-size: 20px;
   color: #fff;
@@ -108,5 +108,5 @@ h2 {
 
 .fake {
   height: 200vh;
-  background-color: #30252a;
+  background-color: #882551;
 }
