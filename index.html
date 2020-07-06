@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="STIKOM Uyelindo Kupang" />
+    <meta name="msapplication-TileColor" content="#531a35" />
+    <meta name="theme-color" content="#ffffff" />
+
     <title>STIKOM Uyelindo Kupang</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#531a35" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <script src="./js/siema/siema.min.js"></script> -->
+    <!-- <script src="js/siema/siema.min.js"></script> -->
   </head>
   <body>
     <!-- ------------------------------ TOP MENU ------------------------------- -->
@@ -34,7 +45,10 @@
           </svg>
         </button>
         <a href="/" class="brand-wrapper container">
-          <img src="./img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
+          <img
+            src="./img/stikom-uyelindo-logo.png"
+            alt="Logo STIKOM Uyelindo"
+          />
           <div>
             <h1 class="bold text-center name">STIKOM UYELINDO</h1>
             <h2 class="text-center tagline">
@@ -60,6 +74,16 @@
         <li><a href="#">Tentang</a></li>
         <li><a href="#">Daftar</a></li>
       </ul>
+      <a href="/" class="brand-wrapper container">
+        <img src="img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
+        <div>
+          <h1 class="bold text-center">STIKOM UYELINDO</h1>
+          <h2 class="text-center">
+            The Real Education, The Real Inspiration Campus.
+          </h2>
+        </div>
+        <!-- <h1 class="bold">UYELINDO</h1> -->
+      </a>
     </div>
 
     <!-- ------------------------------ MAIN MENU ------------------------------ -->
@@ -72,7 +96,7 @@
           <a href="/">
             <img
               style="width: 42px;"
-              src="./img/stikom-uyelindo-logo.png"
+              src="img/stikom-uyelindo-logo.png"
               alt="Logo STIKOM Uyelindo"
             />
           </a>
@@ -93,7 +117,7 @@
     <!-- ------------------------------- FOOTER -------------------------------- -->
     <div class="footer">
       <div class="footer-logo">
-        <img src="./img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
+        <img src="img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
       </div>
     </div>
 
@@ -114,10 +138,12 @@
           }
         });
 
-        brandHeader.querySelector(".menu-toggle").addEventListener("click", function() {
-          var mainMenu = brandHeader.querySelector(".main-menu");
-          mainMenu.classList.toggle("toggled");
-        });
+        brandHeader
+          .querySelector(".menu-toggle")
+          .addEventListener("click", function () {
+            var mainMenu = brandHeader.querySelector(".main-menu");
+            mainMenu.classList.toggle("toggled");
+          });
       })();
     </script>
   </body>
