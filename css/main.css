@@ -7,6 +7,7 @@ html, body {
   height: 100%;
   position: relative;
   font-family: "Bitter", serif;
+  color: #fff;
 }
 
 h1 {
@@ -147,12 +148,52 @@ h2 {
 /* --------------------------------- FOOTER --------------------------------- */
 .footer {
   background-color: #531a35;
-  height: 400px;
+  padding: 64px 5px;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-wrapper div,
+.footer-logo-wrapper img {
+  padding: 10px;
+}
+
+.footer-logo-wrapper h2 {
+  font-size: 24px;
+}
+
+.footer-logo-wrapper h3 {
+  font-size: 20px;
+}
+
+/* --------------------------------- SITEMAP -------------------------------- */
+.sitemap {
+  margin-top: 20px;
+}
+
+.sitemap a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.sitemap a:hover {
+  text-decoration: underline;
 }
 
 /* --------------------------------- HELPERS -------------------------------- */
 .bold {
   font-weight: bold;
+}
+
+.white-text {
+  color: #fff;
 }
 
 .text-center {
