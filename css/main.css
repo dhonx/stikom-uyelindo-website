@@ -1,0 +1,112 @@
+/* * {
+  transition: all 0.5s ease;
+} */
+body {
+  font-family: "Bitter", serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* --------------------------------- TOP NAV -------------------------------- */
+.top-nav {
+  background-color: #30252a;
+}
+.top-nav ul {
+  display: flex;
+}
+
+.top-nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+.brand-header {
+  background-color: #882551;
+  padding: 50px 0 50px 0;
+}
+
+.brand-header h1,
+.brand-header h2 {
+  color: #e8d216;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.brand-wrapper img {
+  width: 70px;
+  margin: 10px;
+  height: 70px;
+}
+
+/* -------------------------------- MAIN MENU ------------------------------- */
+.main-menu-wrapper {
+  background-color: #882551;
+  position: sticky;
+  top: 0;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu a {
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  padding: 5px;
+  display: flex;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+}
+
+.main-menu a:hover {
+  border-bottom: 5px solid #e8d216;
+  color: #e8d216;
+  transition: all 0.5s ease;
+}
+
+/* -------------------------------- MAIN HERO ------------------------------- */
+.main-hero {
+  height: 500px;
+  background: url("/img/Gambar18.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* --------------------------------- HELPERS -------------------------------- */
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fake {
+  height: 200vh;
+  background-color: #30252a;
+}

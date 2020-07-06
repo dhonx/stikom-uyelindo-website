@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STIKOM Uyelindo Kupang</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="./js/siema/siema.min.js"></script> -->
+  </head>
+  <body>
+    <!-- ------------------------------ TOP MENU ------------------------------- -->
+    <nav class="top-nav">
+      <ul class="container">
+        <li><a href="#">Mahasiswa</a></li>
+        <li><a href="#">Staf</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Orang Tua</a></li>
+      </ul>
+    </nav>
+
+    <!-- -------------------------------- BRAND -------------------------------- -->
+    <div class="brand-header">
+      <a href="/" class="brand-wrapper container">
+        <img src="./img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
+        <div>
+          <h1 class="bold text-center">STIKOM UYELINDO</h1>
+          <h2 class="text-center">
+            The Real Education, The Real Inspiration Campus.
+          </h2>
+        </div>
+        <!-- <h1 class="bold">UYELINDO</h1> -->
+      </a>
+    </div>
+
+    <!-- ------------------------------ MAIN MENU ------------------------------ -->
+    <nav class="main-menu-wrapper">
+      <ul class="main-menu container">
+        <li class="home-menu">
+          <a href="/">
+            <img
+              style="width: 36px;"
+              src="./img/stikom-uyelindo-logo.png"
+              alt="Logo STIKOM Uyelindo"
+            />
+          </a>
+        </li>
+        <li><a href="#">Akademik</a></li>
+        <li><a href="#">Penerimaan</a></li>
+        <li><a href="#">Berita & Acara</a></li>
+        <li><a href="#">Pengumuman</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Daftar</a></li>
+      </ul>
+    </nav>
+
+    <!-- -------------------------------- HERO --------------------------------- -->
+    <div class="main-hero"></div>
+
+    <div class="fake"></div>
+
+    <script>
+      (function () {
+        var mainMenuWrapper = document.querySelector(".main-menu-wrapper"),
+          homeMenu = mainMenuWrapper.querySelector(".home-menu");
+
+        window.addEventListener("scroll", function () {
+          var topPos = mainMenuWrapper.getBoundingClientRect().top;
+          if (topPos == 0) {
+            homeMenu.style.display = "flex";
+            mainMenuWrapper.style.backgroundColor = "#30252ac9";
+          } else {
+            homeMenu.style.display = "none";
+            mainMenuWrapper.style.backgroundColor = "#882551";
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
