@@ -144,9 +144,20 @@ a.logo:hover {
 .custom-list li {
   /* list-style: disc; */
   line-height: 23px;
-  /* margin-left: 20px; */
+  margin-left: 30px;
   padding: 11px;
   border-bottom: 2px dashed #90546f;
+  position: relative;
+}
+
+.custom-list li:before {
+  content: "";
+  position: absolute;
+  background-image: url('/img/checkbox.svg');
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  left: -23px;
 }
 
 .custom-list li:last-child {
