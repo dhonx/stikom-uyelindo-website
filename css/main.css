@@ -223,6 +223,20 @@ b {
   text-decoration: underline;
 }
 
+.social-media {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media img {
+  width: 42px;
+  height: 42px;
+  margin: 5px;
+}
+
 /* --------------------------------- HELPERS -------------------------------- */
 .custom-h2 {
   padding: 30px 0 0 0;
@@ -255,7 +269,7 @@ b {
   /* height: 200vh; */
   padding-bottom: 20px;
   display: flex;
-  background-color: #641f3e;
+  background-color: #882551;
 }
 
 /* ---- SHADOWS ---- */
