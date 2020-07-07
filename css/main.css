@@ -149,7 +149,7 @@ h2 {
   background: url("/img/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center bottom;
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
