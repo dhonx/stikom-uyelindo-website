@@ -34,7 +34,8 @@ b {
 
 /* --------------------------------- TOP NAV -------------------------------- */
 .top-nav {
-  background-color: #30252a;
+  /* background-color: #30252a; */
+  background-color: #7f224c;
 }
 .top-nav ul {
   display: flex;
@@ -189,7 +190,8 @@ b {
 
 /* --------------------------------- FOOTER --------------------------------- */
 .footer {
-  background-color: #531a35;
+  /* background-color: #531a35; */
+  background-color: #7f224c;
   padding: 64px 5px;
 }
 
