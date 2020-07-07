@@ -223,10 +223,13 @@ b {
   text-decoration: underline;
 }
 
-.social-media {
-  display: flex;
+.social-media-wrapper {
   padding-top: 35px;
   padding-bottom: 30px;
+}
+
+.social-media {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -234,7 +237,7 @@ b {
 .social-media img {
   width: 42px;
   height: 42px;
-  margin: 5px;
+  margin: 10px;
 }
 
 /* --------------------------------- HELPERS -------------------------------- */
