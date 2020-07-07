@@ -142,8 +142,8 @@ h2 {
 
 /* -------------------------------- MAIN HERO ------------------------------- */
 .main-hero {
-  height: 500px;
-  background: url("/img/Gambar18.jpg");
+  height: 100vh;
+  background: url("/img/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
