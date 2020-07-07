@@ -35,18 +35,9 @@
     </nav>
 
     <!-- -------------------------------- BRAND -------------------------------- -->
-    <div class="brand-header">
-      <a href="/" class="brand-wrapper container">
-        <img src="./img/stikom-uyelindo-logo.png" alt="Logo STIKOM Uyelindo" />
-        <div>
-          <h1 class="bold text-center">STIKOM UYELINDO</h1>
-          <h2 class="text-center">
-            The Real Education, The Real Inspiration Campus.
-          </h2>
-        </div>
-        <!-- <h1 class="bold">UYELINDO</h1> -->
-      </a>
-    </div>
+    <!-- <div class="brand-header">
+      <a href="/" class="brand-wrapper container"> </a>
+    </div> -->
 
     <!-- ------------------------------ MAIN MENU ------------------------------ -->
     <nav class="main-menu-wrapper">
@@ -54,15 +45,6 @@
         <li><a href="#">Akademik</a></li>
         <li><a href="#">Penerimaan</a></li>
         <li><a href="#">Berita & Acara</a></li>
-        <li class="home-menu">
-          <a href="/">
-            <img
-              style="width: 42px;"
-              src="./android-chrome-192x192.png"
-              alt="Logo STIKOM Uyelindo"
-            />
-          </a>
-        </li>
         <li><a href="#">Pengumuman</a></li>
         <li><a href="#">Tentang</a></li>
         <li><a href="#">Daftar</a></li>
@@ -251,17 +233,19 @@
     <!-- ------------------------------- SCRIPTS ------------------------------- -->
     <script>
       (function () {
-        var mainMenuWrapper = document.querySelector(".main-menu-wrapper"),
-          homeMenu = mainMenuWrapper.querySelector(".home-menu");
+        var mainMenuWrapper = document.querySelector(".main-menu-wrapper");
+
+        // homeMenu = mainMenuWrapper.querySelector(".home-menu");
 
         window.addEventListener("scroll", function () {
           var topPos = mainMenuWrapper.getBoundingClientRect().top;
           if (topPos == 0) {
-            homeMenu.style.display = "flex";
-            mainMenuWrapper.style.backgroundColor = "#30252a59";
+            // homeMenu.style.display = "flex";
+            mainMenuWrapper.style.boxShadow = "#2b2626b5 0px 2px 5px 0px";
           } else {
-            homeMenu.style.display = "none";
+            // homeMenu.style.display = "none";
             mainMenuWrapper.style.backgroundColor = "#882551";
+            mainMenuWrapper.style.boxShadow = "none";
           }
         });
       })();
