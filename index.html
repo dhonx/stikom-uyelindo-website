@@ -45,6 +45,9 @@
         <li><a href="#">Akademik</a></li>
         <li><a href="#">Penerimaan</a></li>
         <li><a href="#">Berita & Acara</a></li>
+        <li style="width: 64px;">
+          <a class="logo" title="Beranda" href="/"></a>
+        </li>
         <li><a href="#">Pengumuman</a></li>
         <li><a href="#">Tentang</a></li>
         <li><a href="#">Daftar</a></li>
@@ -233,19 +236,16 @@
     <!-- ------------------------------- SCRIPTS ------------------------------- -->
     <script>
       (function () {
-        var mainMenuWrapper = document.querySelector(".main-menu-wrapper");
-
-        // homeMenu = mainMenuWrapper.querySelector(".home-menu");
+        var mainMenuWrapper = document.querySelector(".main-menu-wrapper"),
+          mainMenu = mainMenuWrapper.querySelector(".main-menu");
+        // logo = mainMenu.querySelector(".logo");
 
         window.addEventListener("scroll", function () {
           var topPos = mainMenuWrapper.getBoundingClientRect().top;
           if (topPos == 0) {
-            // homeMenu.style.display = "flex";
-            mainMenuWrapper.style.boxShadow = "#2b2626b5 0px 2px 5px 0px";
+            mainMenu.classList.add("sticked");
           } else {
-            // homeMenu.style.display = "none";
-            mainMenuWrapper.style.backgroundColor = "#882551";
-            mainMenuWrapper.style.boxShadow = "none";
+            mainMenu.classList.remove("sticked");
           }
         });
       })();

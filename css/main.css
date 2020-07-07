@@ -69,24 +69,27 @@ b {
 /* -------------------------------- MAIN MENU ------------------------------- */
 .main-menu-wrapper {
   background-color: #882551;
+  box-shadow: #2b2626b0 0px 2px 3px 0px;
+  position: sticky;
+  top: 0;
+  transition: all 0.35s ease;
+  z-index: 2;
 }
 
 .main-menu {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 
 .main-menu a {
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
-  padding: 10px 5px;
+  color: #fff;
   display: flex;
   font-size: 20px;
-  color: #fff;
+  padding: 10px 5px;
   text-decoration: none;
-  flex-wrap: wrap;
-  flex: 1 0 auto;
 }
 
 .main-menu a:hover {
@@ -95,17 +98,43 @@ b {
   transition: all 0.5s ease;
 }
 
-.home-menu a:hover {
+a.logo:hover {
   border-color: transparent;
+}
+
+.logo {
+  background-image: url("/android-chrome-192x192.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 64px;
+  margin: 0 auto;
+  position: static;
+  width: 64px;
+}
+
+.main-menu.sticked .logo {
+  width: 30px;
+  height: 30px;
+  top: -40px;
 }
 
 /* -------------------------------- MAIN HERO ------------------------------- */
 .main-hero {
-  height: 100vh;
-  background: url("/img/bg.jpg");
-  background-size: cover;
   background-attachment: fixed;
   background-position: center bottom;
+  background-size: cover;
+  background: url("/img/bg.jpg");
+  height: 100vh;
+}
+
+.main-hero:before {
+  background-color: #231e1e4d;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 /* .custom-list {
@@ -227,55 +256,4 @@ b {
   padding-bottom: 20px;
   display: flex;
   background-color: #882551;
-}
-.brand-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  position: static;
-}
-
-.brand-header {
-  padding: 50px 0 50px 0;
-}
-
-.brand-wrapper img {
-  width: 70px;
-  margin: 10px;
-  height: 70px;
-}
-
-/* -------------------------------- MAIN MENU ------------------------------- */
-.main-menu-wrapper {
-  display: block;
-  background-color: #882551;
-  position: sticky;
-  top: 0;
-}
-
-.main-menu {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.main-menu a {
-  border-bottom: 5px solid transparent;
-  border-top: 5px solid transparent;
-  padding: 5px;
-  display: flex;
-  font-size: 20px;
-  color: #fff;
-  text-decoration: none;
-  flex-wrap: wrap;
-  flex: 1 0 auto;
-}
-
-.main-menu a:hover {
-  border-bottom: 5px solid #e8d216;
-  color: #e8d216;
-  transition: all 0.5s ease;
 }
