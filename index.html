@@ -110,7 +110,16 @@
     <!-- -------------------------------- HERO --------------------------------- -->
     <div class="main-hero"></div>
 
-    <div class="fake"></div>
+    <div class="fake">
+      <div class="container text-center">
+        <h2 class="custom-h2 bold">Ilmu Kompetensi</h2>
+        <p class="mt-2" style="font-size: 23px;">
+          Didirikan 20 tahun lalu, Sekolah Tinggi Informasi & Komputer Uyelindo
+          Kupang (STIKOM) menyediakan berbagai macam ilmu kompetensi untuk
+          Indonesia yang modern.
+        </p>
+      </div>
+    </div>
 
     <div class="fake"></div>
 
@@ -159,8 +168,15 @@
             mainMenuWrapper.classList.add("sticked");
             // homeMenu.style.display = "flex";
             // mainMenuWrapper.style.backgroundColor = "#531a35";
+            // } else {
+            //   mainMenuWrapper.classList.remove("sticked");
+            //   homeMenu.style.display = "flex";
+            //   mainMenuWrapper.style.backgroundColor = "#531a35";
+            //   mainMenuWrapper.style.boxShadow = "#2b2626b5 0px 2px 5px 0px";
           } else {
-            mainMenuWrapper.classList.remove("sticked");
+            homeMenu.style.display = "none";
+            mainMenuWrapper.style.backgroundColor = "#882551";
+            mainMenuWrapper.style.boxShadow = "none";
           }
         });
 
