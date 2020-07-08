@@ -54,9 +54,13 @@ b {
 }
 
 .brand-wrapper {
+  background-color: #882551;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.brand-wrapper a {
   text-decoration: none;
 }
 
@@ -153,7 +157,7 @@ a.logo:hover {
 .custom-list li:before {
   content: "";
   position: absolute;
-  background-image: url('/img/checkbox.svg');
+  background-image: url("/img/checkbox.svg");
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
