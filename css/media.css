@@ -21,9 +21,45 @@
   .main-menu .logo {
     display: none;
   }
+
+  .brand-wrapper {
+    display: none;
+  }
+
+  .main-menu-mobile-wrapper {
+    background-color: #882551;
+    box-shadow: #2b2626b0 0px 3px 2px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .menu-toggle {
+    background-image: url(/img/open-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 35px;
+    margin: 0 auto;
+    position: static;
+    cursor: pointer;
+    width: 48px;
+  }
+
+  .mobile-brand {
+    font-size: 24px;
+    color: #e8d216;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-  /*  */
+@media (min-width: 1000px) {
+  .main-menu-mobile-wrapper {
+    display: none;
+  }
 }
