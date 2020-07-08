@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap"
       rel="stylesheet"
@@ -263,14 +264,16 @@
           mainMenu = mainMenuWrapper.querySelector(".main-menu");
         // logo = mainMenu.querySelector(".logo");
 
-        window.addEventListener("scroll", function () {
-          var topPos = mainMenuWrapper.getBoundingClientRect().top;
-          if (topPos <= 20) {
-            mainMenu.classList.add("sticked");
-          } else {
-            mainMenu.classList.remove("sticked");
-          }
-        });
+        if (getComputedStyle(mainMenuWrapper).display !== "none") {
+          window.addEventListener("scroll", function () {
+            var topPos = mainMenuWrapper.getBoundingClientRect().top;
+            if (topPos <= 20) {
+              mainMenu.classList.add("sticked");
+            } else {
+              mainMenu.classList.remove("sticked");
+            }
+          });
+        }
       })();
     </script>
   </body>
