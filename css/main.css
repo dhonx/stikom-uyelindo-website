@@ -73,7 +73,7 @@ b {
 /* -------------------------------- MAIN MENU ------------------------------- */
 .main-menu-wrapper {
   background-color: #882551;
-  box-shadow: #2b2626b0 0px 2px 3px 0px;
+  box-shadow: #2b2626b0 0px 3px 2px 0px;
   position: sticky;
   top: 0;
   transition: all 0.35s ease;
