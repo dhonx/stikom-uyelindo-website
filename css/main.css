@@ -126,10 +126,11 @@ a.logo:hover {
 
 /* -------------------------------- MAIN HERO ------------------------------- */
 .main-hero {
-  background-attachment: fixed;
   background-position: center bottom;
   background-size: cover;
   background: url("/img/bg.jpg");
+  /* Dont move it before background property */
+  background-attachment: fixed;
   height: 100vh;
 }
 
