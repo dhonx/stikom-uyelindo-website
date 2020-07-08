@@ -22,8 +22,9 @@
     display: none;
   }
 
-  .brand-wrapper {
-    display: none;
+  .main-menu-mobile-wrapper .logo {
+    width: 48px;
+    height: 48px;
   }
 
   .main-menu-mobile-wrapper {
@@ -49,6 +50,10 @@
     position: static;
     cursor: pointer;
     width: 48px;
+  }
+
+  .brand-wrapper {
+    display: none;
   }
 
   .mobile-brand {
