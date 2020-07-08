@@ -142,12 +142,7 @@ a.logo:hover {
   width: 100%;
 }
 
-/* .custom-list {
-  position: relative;
-} */
-
 .custom-list li {
-  /* list-style: disc; */
   line-height: 23px;
   margin-left: 30px;
   padding: 11px;
@@ -169,16 +164,6 @@ a.logo:hover {
   border: none;
 }
 
-/* .custom-list li::before {
-  position: absolute;
-  content: "";
-  left: -20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #fff;
-} */
-
 /* --------------------------------- FOOTER --------------------------------- */
 .footer {
   /* background-color: #531a35; */
@@ -188,7 +173,6 @@ a.logo:hover {
 
 .footer-logo-wrapper {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
 }
