@@ -308,3 +308,9 @@ a.logo:hover {
   display: flex;
   background-color: #882551;
 }
+
+.alert {
+  background-color: #ffa726;
+  color: #000;
+  padding: 10px;
+}
