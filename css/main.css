@@ -1,6 +1,7 @@
 body {
-  font-family: "Bitter", serif;
   color: #fff;
+  font-family: "Bitter", serif;
+  overflow-x: hidden;
 }
 p {
   line-height: 23px;
@@ -95,10 +96,24 @@ b {
   text-decoration: none;
 }
 
-.main-menu a:hover {
+.main-menu a:hover,
+.sub-menu a:hover {
   border-bottom: 5px solid #e8d216;
   color: #e8d216;
   transition: all 0.5s ease;
+}
+
+.main-menu .sub-menu {
+  background-color: #882551;
+  box-shadow: #1c1817 2px 2px 8px -2px;
+  display: none;
+  padding: 5px 10px;
+  position: absolute;
+}
+
+.main-menu li:hover .sub-menu {
+  display: inline-block;
+  /* transition: all 0.5s ease; */
 }
 
 a.logo:hover {
