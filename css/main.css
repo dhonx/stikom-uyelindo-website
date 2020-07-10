@@ -1,21 +1,27 @@
 body {
   color: #fff;
   font-family: "Bitter", serif;
+  font-size: 18px;
   overflow-x: hidden;
 }
+
 p {
   line-height: 23px;
   margin: 10px 0;
 }
+
 h1 {
   font-size: 4rem;
 }
+
 h2 {
   font-size: 1.4rem;
 }
+
 i {
   font-style: italic;
 }
+
 b {
   font-weight: bold;
 }
@@ -116,6 +122,11 @@ b {
   /* transition: all 0.5s ease; */
 }
 
+.main-menu-mobile-wrapper,
+.main-menu-wrapper {
+  z-index: 3;
+}
+
 a.logo:hover {
   border-color: transparent;
 }
@@ -140,12 +151,18 @@ a.logo:hover {
 
 /* -------------------------------- MAIN HERO ------------------------------- */
 .main-hero {
+  align-items: center;
+  background: url("/img/bg.jpg");
   background-position: center bottom;
   background-size: cover;
-  background: url("/img/bg.jpg");
   /* Dont move it before background property */
   background-attachment: fixed;
+  display: flex;
   height: 100vh;
+  font-size: 3em;
+  justify-content: center;
+  max-height: 800px;
+  position: relative;
 }
 
 .main-hero:before {
@@ -154,6 +171,13 @@ a.logo:hover {
   height: 100%;
   position: absolute;
   width: 100%;
+  z-index: 1;
+}
+
+.hero-quote {
+  font-size: 3em;
+  line-height: 90px;
+  z-index: 2;
 }
 
 .community-list-wrapper {
