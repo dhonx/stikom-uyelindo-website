@@ -44,11 +44,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
-    height: 35px;
+    height: 30px;
     margin: 0 auto;
     position: static;
     cursor: pointer;
-    width: 48px;
+    width: 30px;
   }
 
   .brand-wrapper {
