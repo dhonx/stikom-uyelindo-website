@@ -65,9 +65,9 @@
     flex-direction: column;
   }
 
-  .community-list-wrapper li:last-child {
+  /* .community-list-wrapper li:last-child {
     border-bottom: 2px dashed #90546f;
-  }
+  } */
 }
 
 /* Large devices (desktops, less than 1200px) */

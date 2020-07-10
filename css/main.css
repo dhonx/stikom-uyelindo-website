@@ -162,7 +162,7 @@ a.logo:hover {
 }
 
 .custom-list li {
-  border-bottom: 2px dashed #90546f;
+  /* border-bottom: 2px dashed #90546f; */
   line-height: 23px;
   margin: 0 30px;
   padding: 11px;
@@ -170,18 +170,18 @@ a.logo:hover {
 }
 
 .custom-list li:before {
-  content: "";
-  position: absolute;
   background-image: url("/img/checkbox.svg");
-  width: 30px;
-  height: 30px;
   background-repeat: no-repeat;
+  content: "";
+  height: 30px;
   left: -23px;
+  position: absolute;
+  width: 30px;
 }
 
-.custom-list li:last-child {
+/* .custom-list li:last-child {
   border: none;
-}
+} */
 
 /* --------------------------------- FOOTER --------------------------------- */
 .footer {
