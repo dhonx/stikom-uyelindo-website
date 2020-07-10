@@ -248,7 +248,7 @@ a.logo:hover {
 
 .sitemap a {
   text-decoration: none;
-  font-size: 20px;
+  /* font-size: 20px; */
   color: #fff;
   margin-right: 5px;
 }
