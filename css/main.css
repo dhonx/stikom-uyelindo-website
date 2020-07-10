@@ -26,6 +26,14 @@ b {
   font-weight: bold;
 }
 
+a.white {
+  color: #fff;
+}
+
+a.white:hover {
+  text-decoration: underline;
+}
+
 .container {
   margin: 0 auto;
   max-width: 960px;
