@@ -25,8 +25,7 @@ b {
 }
 
 /* --------------------------------- TOP NAV -------------------------------- */
-.top-nav {
-  /* background-color: #30252a; */
+/* .top-nav {
   background-color: #7f224c;
 }
 .top-nav ul {
@@ -41,7 +40,7 @@ b {
 }
 .top-nav a:hover {
   text-decoration: underline;
-}
+} */
 
 .brand-header {
   background-color: #882551;
@@ -142,11 +141,16 @@ a.logo:hover {
   width: 100%;
 }
 
+.community-list-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .custom-list li {
-  line-height: 23px;
-  margin-left: 30px;
-  padding: 11px;
   border-bottom: 2px dashed #90546f;
+  line-height: 23px;
+  margin: 0 30px;
+  padding: 11px;
   position: relative;
 }
 
