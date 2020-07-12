@@ -161,6 +161,11 @@ a.logo:hover {
   top: -40px;
 }
 
+.btn-daftar:hover {
+  background-color: #fff;
+  color: #000 !important;
+}
+
 /* -------------------------------- MAIN HERO ------------------------------- */
 .main-hero {
   align-items: center;
