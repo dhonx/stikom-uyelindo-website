@@ -191,6 +191,20 @@ a.logo:hover {
   z-index: 1;
 } */
 
+.pre-bg {
+  align-items: center;
+  /* background: url("/img/bg.jpg"); */
+  background-position: 50% 40%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  height: 100vh;
+  font-size: 3em;
+  justify-content: center;
+  max-height: 50vh;
+  position: relative;
+}
+
 .main-bg:before {
   background-color: #0a090985;
   content: "";
