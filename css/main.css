@@ -167,22 +167,31 @@ a.logo:hover {
 }
 
 /* -------------------------------- MAIN HERO ------------------------------- */
-.main-hero {
+/* .main-hero {
   align-items: center;
   background: url("/img/bg.jpg");
   background-position: center bottom;
-  background-size: cover;
-  /* Dont move it before background property */
-  background-attachment: fixed;
+  background-size: cover; */
+/* Dont move it before background property */
+/* background-attachment: fixed;
   display: flex;
   height: 100vh;
   font-size: 3em;
   justify-content: center;
   max-height: 800px;
   position: relative;
-}
+} */
 
-.main-hero:before {
+/* .main-hero:before {
+  background-color: #0a090985;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+} */
+
+.main-bg:before {
   background-color: #0a090985;
   content: "";
   height: 100%;
