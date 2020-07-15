@@ -67,6 +67,45 @@
   /* .community-list-wrapper li:last-child {
     border-bottom: 2px dashed #90546f;
   } */
+
+  .mobile-menu-wrapper {
+    display: none;
+    user-select: none;
+  }
+
+  .mobile-menu-wrapper,
+  .main-menu-wrapper ul {
+    position: absolute;
+    width: 100%;
+    background-color: #81214c;
+    top: 67px;
+    z-index: -1;
+    left: 0;
+    padding: 5px;
+    height: calc(100vh - 67px);
+    overflow-x: auto;
+  }
+
+  .mobile-menu-wrapper.show {
+    display: flex;
+  }
+
+  .mobile-menu li {
+    padding: 10px;
+  }
+
+  .mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .mobile-menu a:hover {
+    text-decoration: underline;
+  }
+
+  .btn-daftar {
+    padding: 10px;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
