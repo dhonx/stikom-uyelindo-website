@@ -347,3 +347,15 @@ a.logo:hover {
   color: #000;
   padding: 10px;
 }
+
+.float-wa {
+  position: fixed;
+  background-image: url(/img/wa.png);
+  bottom: 0;
+  width: 48px;
+  height: 48px;
+  margin: 20px;
+  right: 0;
+  background-repeat: round;
+  z-index: 2;
+}
