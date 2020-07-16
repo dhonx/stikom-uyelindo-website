@@ -12,6 +12,10 @@ p {
   text-indent: 2em;
 }
 
+p.no-indent {
+  text-indent: 0;
+}
+
 h1 {
   font-size: 3rem;
 }
