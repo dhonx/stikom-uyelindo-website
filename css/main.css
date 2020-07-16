@@ -360,3 +360,12 @@ a.logo:hover {
   background-repeat: round;
   z-index: 2;
 }
+
+.akreditasi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #792349;
+  padding: 5px;
+  border-radius: 5px;
+}

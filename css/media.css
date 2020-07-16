@@ -111,6 +111,10 @@
     height: 36px;
     width: 36px;
   }
+
+  .akreditasi {
+    flex-direction: column;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
