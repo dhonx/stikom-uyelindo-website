@@ -610,23 +610,6 @@
     </div>
 
     <!-- ------------------------------- SCRIPTS ------------------------------- -->
-    <script>
-      (function () {
-        var mainMenuWrapper = document.querySelector(".main-menu-wrapper"),
-          mainMenu = mainMenuWrapper.querySelector(".main-menu");
-
-        if (getComputedStyle(mainMenuWrapper).display !== "none") {
-          window.addEventListener("scroll", function () {
-            var topPos = mainMenuWrapper.getBoundingClientRect().top;
-            if (topPos <= 20) {
-              mainMenu.classList.add("sticked");
-            } else {
-              mainMenu.classList.remove("sticked");
-            }
-          });
-        }
-      })();
-    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
